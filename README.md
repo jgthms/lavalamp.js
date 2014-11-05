@@ -38,6 +38,10 @@ For example, if you click *next*:
 * The `previous` button is the first child, the `next` button is the last child. It's *possible* to have other elements before and/or after, but then the illusion of the clicked button expanding is harder to execute because the `lavalamp` needs to be positioned *exactly* on the clicked button (which in the case, would not be exactly at `top: 0;` or `bottom: 0;`). It's possible to change the CSS animation values if needed though.
 * The viewport is the whole `body`. It's possible to have a fixed **header** and/or **footer** as well, because the `lavalamp` is fixed as well. So, if you have a header that's `70px` high, just change the CSS animation's `top` values to be `70px`, not `0`; (GIF demo coming soon).
 
+## Is this production-ready?
+
+Definitely **not**. It's merely a demo to showcase the intended user experience. Feel free to implement as you wish.
+
 ## License
 
 The MIT License (MIT)
