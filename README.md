@@ -1,7 +1,7 @@
 lavalamp.js
 ===========
 
-A replacement for infinite scrolling. Works both ways (next and previous).
+A replacement for infinite scroll. Works both ways (next and previous).
 
 ## Demo
 
@@ -40,7 +40,9 @@ For example, if you click *next*:
 
 ## Is this production-ready?
 
-Definitely **not**. It's merely a demo to showcase the intended user experience. Feel free to implement as you wish.
+Kind of. The CSS animations should work well. The JS only takes care of updating the CSS classes, showing/hiding the lavalamp, and scrolling up and down. But it can be improved.
+
+This repo is just a demo to showcase the intended user experience. Feel free to implement as you wish.
 
 ## License
 
