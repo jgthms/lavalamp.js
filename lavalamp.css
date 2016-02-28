@@ -4,8 +4,7 @@ li{ background: #fff; border-bottom: 1px solid #e0e0e0; padding: 20px;}
   li:nth-child(2n){ background: #fafafa;}
 
 .button,
-#lavalamp{ background: #1A1A1A; border: none; color: white; display: block; font-size: 10px; font-weight: bold; height: 60px; letter-spacing: 0.2em; line-height: 1; padding: 25px 20px; position: relative; text-align: center; text-transform: uppercase; vertical-align: top;}
-
+#lavalamp{ background: #1A1A1A; border: none; color: white; display: block; font-size: 10px; font-weight: bold; height: 60px; letter-spacing: 0.2em; line-height: 1; padding: 25px 20px; position: relative; text-align: center; text-transform: uppercase; vertical-align: top; cursor: pointer;}
 #lavalamp{ display: none; height: auto; left: 0; line-height: 20px; min-height: 60px; overflow: hidden; padding: 20px; position: fixed; text-align: center; width: 100%; z-index: 9001;}
 #lavalamp span{ display: block; left: 0; line-height: 20px; margin-top: -10px; position: absolute; top: 50%; width: 100%;}
 #lavalamp:before,
