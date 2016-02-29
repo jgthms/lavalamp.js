@@ -1,9 +1,10 @@
-(function ($) {
+(function (window, document, $) {
   'use strict';
 
   $.fn.lavalamp = function() {
     var self = this;
     var $window = $(window);
+    var $document = $(document);
     var $lavalamp = self.find('#lavalamp');
     var $previous = self.find('#lavalamp-previous');
     var $next = self.find('#lavalamp-next');
@@ -22,7 +23,7 @@
 
       // This timeout simulates an Ajax call.
       setTimeout( function() {
-        $(window).scrollTop(scrollTarget);
+        $window.scrollTop(scrollTarget);
         $lavalamp.removeClass(startClass).addClass(endClass);
       }, ajaxCallSimulation);
 
@@ -33,12 +34,12 @@
         canScroll = true;
         $lavalamp.removeClass();
       }, ajaxCallSimulation + endSpeed);
-    }
+    };
 
     $previous.click( function() {
       // The document's height is used to scroll to the bottom of the page.
       // Better techniques surely exist.
-      self.animate('down', $(document).height());
+      self.animate('down', $document.height());
     });
 
     $next.click( function() {
@@ -52,8 +53,8 @@
       if (!canScroll) {
         ev.preventDefault();
       }
-    })
+    });
 
     return self;
   };
-})(jQuery);
+})(window, document, jQuery);
